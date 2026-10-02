@@ -8,7 +8,7 @@ public class Exce {
             System.out.println(result);
 
         } catch (ArithmeticException e) {
-            System.out.println("error occured...");
+            System.out.println("error occured..."+ e);
         }
 
         System.out.println("stopped");
