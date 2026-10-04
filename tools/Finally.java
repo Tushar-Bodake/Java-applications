@@ -6,6 +6,7 @@ public class Finally {
     public static void main(String[] args) throws NumberFormatException, IOException {
         
         int nums = 0;
+        
         BufferedReader br = null;
 
         try{
@@ -14,6 +15,7 @@ public class Finally {
             br = new BufferedReader(in);
 
             nums = Integer.parseInt(br.readLine());
+
             System.out.println(nums);
         }
         finally{
