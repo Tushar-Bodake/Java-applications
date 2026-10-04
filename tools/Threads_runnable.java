@@ -1,24 +1,21 @@
-class A implements Runnable{
 
-    public void run (){
-        for(int i=0;i<=5;i++){
-
-        System.out.println("hii");
-        try {
-            Thread.sleep(5);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    }
+public class Threads_runnable {
     
-}
+    public static void main(String[] args) {
 
-class B implements Runnable{
+        Runnable r1 = () -> {
 
-    public void run (){
-        for(int i=0;i<=5;i++){
+            for (int i = 0; i <= 5; i++) {
+                System.out.println("hii");
+                try {
+                    Thread.sleep(5);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        Runnable r2 = () -> {
+            for(int i=0;i<=5;i++){
 
         System.out.println("hello");
         try {
@@ -27,16 +24,7 @@ class B implements Runnable{
             e.printStackTrace();
         }
     }
-
-    }
-    
-}
-public class Threads_runnable {
-    
-    public static void main(String[] args) {
-
-        Runnable r1 = new A();
-        Runnable r2 = new B();
+        };
 
         Thread t1 = new Thread(r1);
         Thread t2 = new Thread(r2);
