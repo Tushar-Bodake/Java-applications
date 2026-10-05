@@ -10,8 +10,10 @@ public class Threads_mutation {
         
         Counter c = new Counter();
 
-        Runnable obj1 =() ->{
+        Runnable obj1 =() 
+        ->{
             for(int i=0; i<=1000;i++){
+               
                 c.increament();
             }
         };
