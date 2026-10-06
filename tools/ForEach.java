@@ -10,6 +10,7 @@ public class ForEach{
 
         Stream <Integer> sortedValues = nums.stream()
                             .filter(n -> n%2==0);
+                        
                            
         sortedValues.forEach(n -> System.out.println(n));
         
