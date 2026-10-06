@@ -16,14 +16,28 @@ public class ParllelStream {
         
         long startSeq = System.currentTimeMillis();
         int s1 = nums.stream()
-                .map(i -> i * 2)
+                .map(i ->{
+                    try{
+                    Thread.sleep(1);
+                    }catch(Exception e){
+
+                    }
+                    return  i* 2;
+                } )
                 .mapToInt(i -> i)
                 .sum();
         long endSeq = System.currentTimeMillis();
 
         long startPar = System.currentTimeMillis();
         int s2 = nums.parallelStream()
-                .map(i -> i * 2)
+                .map(i ->{
+                    try{
+                    Thread.sleep(1);
+                    }catch(Exception e){
+
+                    }
+                    return  i* 2;
+                } )
                 .mapToInt(i -> i)
                 .sum();
         long endPar = System.currentTimeMillis();
