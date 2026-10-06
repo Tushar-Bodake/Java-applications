@@ -8,9 +8,12 @@ public class ForEach{
         
         List <Integer> nums = Arrays.asList(1,2,3,4,6);
 
-        Stream <Integer> s1= nums.stream();
-
-        s1.forEach(n -> System.out.println(n));
+        int result = nums.stream()
+                            .filter(n -> n%2==0)
+                            .map(n -> n*2)
+                            .reduce(0,(c,e)-> c+e);
+        
+    System.out.println(result);
         
     }
 } 
