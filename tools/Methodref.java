@@ -43,7 +43,7 @@ class Methodref {
         List <Student> students = new ArrayList<>();
 
         students = names.stream()
-                        .map(name -> new Student(name))
+                        .map(Student :: new )
                         .toList();
 
         System.out.println(students);
