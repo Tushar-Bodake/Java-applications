@@ -6,8 +6,9 @@ class Methodref {
         List <String> names = Arrays.asList("tushar","akib","ritesh");
 
         List <String> nm = names.stream()
-                    .map(n -> n.toUpperCase())
+                    .map(String :: toUpperCase)
                     .toList();
-        System.out.println(nm);
+        
+        nm.forEach(System.out :: println);
     }
 }
