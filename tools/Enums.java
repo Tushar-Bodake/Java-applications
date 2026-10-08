@@ -1,5 +1,6 @@
 public class Enums {
     enum Laptops {
+        
         dell(200), hp(500), macbook(), asus(700);
 
         private int price;
@@ -18,6 +19,7 @@ public class Enums {
 
         public  void setPrice(int price){
             this.price = price;
+            
         }
     }
 
