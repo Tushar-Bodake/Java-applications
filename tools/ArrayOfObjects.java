@@ -1,13 +1,18 @@
 class ArrayOfObjects{
     int roll;
+    
     String name;
+    
     int marks;
 
     public static void  main(String args[]){
 
         ArrayOfObjects s1 = new ArrayOfObjects();
+      
         s1.roll=1;
+        
         s1.name="Tushar";
+        
         s1.marks=99;
 
         ArrayOfObjects s2 = new ArrayOfObjects();
