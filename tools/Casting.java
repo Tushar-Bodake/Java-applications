@@ -3,6 +3,7 @@ class A{
         System.out.println("IN A");
     }
 }
+
 class B extends A{
     public void display(){
         System.out.println("IN B");
@@ -17,5 +18,6 @@ public class Casting {
 
         B obj2 = (B) obj1;
         obj2.display();
+        
     }
 }
