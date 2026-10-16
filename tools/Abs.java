@@ -1,5 +1,6 @@
 
 abstract class A{
+    
     public abstract void play();
     public  void drive(){
         System.out.println("driveeeeee");
