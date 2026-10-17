@@ -4,7 +4,6 @@ abstract class A{
     public  void drive(){
         System.out.println("driveeeeee");
     }
-
 }
 class B extends A{
     public void play(){
