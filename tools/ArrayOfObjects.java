@@ -1,8 +1,6 @@
 class ArrayOfObjects{
     int roll;
-    
-    String name;
-    
+    String name;    
     int marks;
 
     public static void  main(String args[]){
